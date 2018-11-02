@@ -7,7 +7,14 @@ LR_DECAY=0.95
 DATA_AUG=1 #choose from 0 and 1,0:no 1:yes
 
 LOG_STORE_PATH='./LOG/'
+if [ ! -d $LOG_STORE_PATH  ];then
+  mkdir $LOG_STORE_PATH
+fi
 PARAM_STORE_PATH='./storedModels/'
+if [ ! -d $PARAM_STORE_PATH  ];then
+  mkdir $PARAM_STORE_PATH
+fi
+
 STORE_PARAM_NAME=$PARAM_STORE_PATH$MODEL_TYPE-$LOSS_TYPE-$UPDATE_RULE-loss_ratio:$LOSS_RATIO-$LR_DECAY-dataAug:$DATA_AUG-$STORE_PARAM_NAME
 
 
