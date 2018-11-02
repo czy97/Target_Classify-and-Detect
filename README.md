@@ -17,7 +17,11 @@
 - python predict.py  
 - the predicted label and bbox will be stored in ./predictFile/classname_predict.txt  
 - each line is formatted as 'label x_min y_min x_max y_max'  
-- the images with plotted bbox will be store in ./predictFile/classname_predict dir
+- the images with plotted bbox will be store in ./predictFile/classname_predict dir  
+
+## Plot training curve
+- Using 'bash dataProcess.sh XXX.log' command to process the log file  
+- python plot.py
 
 
 
