@@ -80,6 +80,8 @@ Get each class's predict data
 And store these data into specific file,such as 'bird_predict.txt
 '''
 prefix = 'predictFile'
+if(not os.path.exists(prefix)):
+        os.makedirs(prefix)
 rootdir = 'tiny_vid'
 class_names = [dir_name for dir_name in os.listdir(rootdir) if os.path.isdir(os.path.join(rootdir, dir_name))]
 class_names = sorted(class_names)
