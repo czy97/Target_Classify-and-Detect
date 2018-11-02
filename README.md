@@ -8,7 +8,7 @@
 
 ## Train:
 - Unzip the tiny_vid/tiny_vid.zip in the tiny_vid directory  
-- bash trainModel.sh  
+- bash trainModel.sh  or ./trainModel.sh  
 - training log will be stored in ./LOG dir  
 - the best torch model will be stored in ./storedModels dir
 
