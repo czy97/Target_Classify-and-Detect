@@ -11,6 +11,7 @@
 - bash trainModel.sh
 
 
+
 ## Demo
 mnist_classification.ipynb
 
